@@ -1,0 +1,227 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      7863,        219]
+NotebookOptionsPosition[      6117,        185]
+NotebookOutlinePosition[      6509,        201]
+CellTagsIndexPosition[      6466,        198]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"f", "[", "x_", "]"}], ":=", 
+  RowBox[{
+   RowBox[{"x", "^", "3"}], "+", 
+   RowBox[{"2", "x"}], "+", "1"}]}]], "Input",
+ CellChangeTimes->{{3.808668324985216*^9, 3.808668342942101*^9}, 
+   3.80866843763408*^9},
+ CellLabel->"In[1]:=",ExpressionUUID->"201ce178-00c2-4ca4-a076-7729f62a3ebe"],
+
+Cell[BoxData[
+ RowBox[{"Expectation", "[", 
+  RowBox[{
+   RowBox[{"f", "[", "x", "]"}], ",", 
+   RowBox[{"x", "\[Distributed]", 
+    RowBox[{"NormalDistribution", "[", 
+     RowBox[{"\[Mu]", ",", "\[Sigma]"}], "]"}]}], ",", 
+   RowBox[{"Method", "\[Rule]", "\"\<Trace\>\""}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.808668440730229*^9, 3.8086684810893593`*^9}, {
+  3.808668556241372*^9, 3.808668574140628*^9}},
+ CellLabel->"In[5]:=",ExpressionUUID->"0a8e5885-ed08-4620-b07e-50a160db50d0"],
+
+Cell[BoxData[
+ RowBox[{"1", "+", 
+  RowBox[{"2", " ", "\[Mu]"}], "+", 
+  SuperscriptBox["\[Mu]", "3"], "+", 
+  RowBox[{"3", " ", "\[Mu]", " ", 
+   SuperscriptBox["\[Sigma]", "2"], "1"}]}]], "Input",
+ CellChangeTimes->{{3.808675159824377*^9, 
+  3.808675159825293*^9}},ExpressionUUID->"1655ba53-8e85-4ea6-a6a0-\
+eb207884a3d6"],
+
+Cell[BoxData[
+ RowBox[{"Probability", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"f", "[", "x", "]"}], ">", "1"}], ",", 
+   RowBox[{"x", "\[Distributed]", 
+    RowBox[{"NormalDistribution", "[", 
+     RowBox[{"\[Mu]", ",", "\[Sigma]"}], "]"}]}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8086685315116167`*^9, 3.80866853332658*^9}, {
+  3.80866858175677*^9, 3.808668592892692*^9}, {3.808668628093951*^9, 
+  3.808668640972582*^9}, {3.808669031995121*^9, 3.808669046881674*^9}},
+ CellLabel->"In[13]:=",ExpressionUUID->"44d8fbae-1f3a-409c-bb5f-cc5fd5db50be"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"1", "-", 
+    RowBox[{
+     FractionBox["1", "2"], " ", 
+     RowBox[{"Erfc", "[", 
+      FractionBox["\[Mu]", 
+       RowBox[{
+        SqrtBox["2"], " ", "\[Sigma]"}]], "]"}]}]}], "/.", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"\[Mu]", "\[Rule]", "0"}], ",", 
+     RowBox[{"\[Sigma]", "\[Rule]", "2"}]}], "}"}]}], "//", "N"}]], "Input",
+ CellChangeTimes->{{3.8086756866980124`*^9, 3.808675698426919*^9}, {
+  3.8086757820934973`*^9, 3.808675809017631*^9}},
+ CellLabel->"In[21]:=",ExpressionUUID->"7edc4d55-aa14-4b25-a518-8b844cacda62"],
+
+Cell[BoxData["0.5`"], "Output",
+ CellChangeTimes->{{3.808675793451501*^9, 3.808675809563068*^9}},
+ CellLabel->"Out[21]=",ExpressionUUID->"eaee8e7b-07b6-4683-9fc4-0dabf2d6c7f3"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"1", "-", 
+   RowBox[{
+    FractionBox["1", "2"], " ", 
+    RowBox[{"Erfc", "[", 
+     FractionBox["1", 
+      RowBox[{
+       SqrtBox["2"], " ", "\[Sigma]"}]], "]"}]}]}], "/.", 
+  RowBox[{"\[Sigma]", "\[Rule]", "1"}]}]], "Input",
+ CellChangeTimes->{{3.808675701872777*^9, 3.808675708384975*^9}},
+ CellLabel->"In[17]:=",ExpressionUUID->"23419eaa-872d-48fd-902b-f18e15f65372"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"1", "-", 
+   RowBox[{
+    FractionBox["1", "2"], " ", 
+    RowBox[{"Erfc", "[", 
+     FractionBox["1", 
+      SqrtBox["2"]], "]"}]}]}], "//", "N"}]], "Input",
+ CellChangeTimes->{{3.808675712369084*^9, 3.808675712904344*^9}},
+ CellLabel->"In[18]:=",ExpressionUUID->"e1b47694-16cc-4ce5-b937-f1107d5affe4"],
+
+Cell[BoxData["0.8413447460685429`"], "Output",
+ CellChangeTimes->{3.808675713425076*^9},
+ CellLabel->"Out[18]=",ExpressionUUID->"fd48d403-d784-4fea-89a3-6d786f14d438"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"FunctionExpand", "[", 
+  RowBox[{"PDF", "[", 
+   RowBox[{
+    RowBox[{"NormalDistribution", "[", 
+     RowBox[{"\[Mu]", ",", "\[Sigma]"}], "]"}], ",", "x"}], "]"}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.808668753197282*^9, 3.808668768677999*^9}, {
+  3.808668932207014*^9, 3.808668955684916*^9}},
+ CellLabel->"In[11]:=",ExpressionUUID->"a18c567d-8632-4810-b36a-21973debf6c3"],
+
+Cell[BoxData[
+ FractionBox[
+  SuperscriptBox["\[ExponentialE]", 
+   RowBox[{"-", 
+    FractionBox[
+     SuperscriptBox[
+      RowBox[{"(", 
+       RowBox[{"x", "-", "\[Mu]"}], ")"}], "2"], 
+     RowBox[{"2", " ", 
+      SuperscriptBox["\[Sigma]", "2"]}]]}]], 
+  RowBox[{
+   SqrtBox[
+    RowBox[{"2", " ", "\[Pi]"}]], " ", "\[Sigma]"}]]], "Output",
+ CellChangeTimes->{
+  3.808668769217593*^9, {3.8086689373031073`*^9, 3.808668956387508*^9}},
+ CellLabel->"Out[11]=",ExpressionUUID->"c5b5f256-97ee-484d-ae12-5bfe5f3af1f9"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Erfc", "[", 
+   FractionBox["\[Mu]", 
+    RowBox[{
+     SqrtBox["2"], " ", "\[Sigma]"}]], "]"}], "//", 
+  "FunctionExpand"}]], "Input",
+ CellChangeTimes->{{3.808675521609757*^9, 3.808675525550437*^9}},
+ CellLabel->"In[15]:=",ExpressionUUID->"bc2ec1b1-5692-4463-a464-fb68954c50df"],
+
+Cell[BoxData[
+ RowBox[{"1", "-", 
+  RowBox[{"Erf", "[", 
+   FractionBox["\[Mu]", 
+    RowBox[{
+     SqrtBox["2"], " ", "\[Sigma]"}]], "]"}]}]], "Output",
+ CellChangeTimes->{{3.808675518969041*^9, 3.808675525920739*^9}},
+ CellLabel->"Out[15]=",ExpressionUUID->"cb450eef-848c-4464-8c0b-840c468f5aa1"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   FractionBox["1", "2"], "^", "10"}], "*", 
+  FractionBox["999", "1000"]}]], "Input",
+ CellChangeTimes->{{3.808675578454691*^9, 3.808675601325864*^9}, 
+   3.808675632532384*^9, {3.80867803676562*^9, 3.808678045028585*^9}},
+ CellLabel->"In[22]:=",ExpressionUUID->"bd8fa069-ea96-4d7d-8e03-43ca6f1fdef6"],
+
+Cell[BoxData[
+ FractionBox["999", "1024000"]], "Output",
+ CellChangeTimes->{3.808678045790949*^9},
+ CellLabel->"Out[22]=",ExpressionUUID->"b6cb987c-5de2-4901-bd66-4a9dc7475c26"]
+}, Open  ]]
+},
+WindowSize->{808, 755},
+WindowMargins->{{4, Automatic}, {Automatic, 4}},
+FrontEndVersion->"12.1 for Mac OS X x86 (64-bit) (March 18, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"ba89b6ff-d173-4c79-87e6-84b20f79c9be"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 324, 8, 30, "Input",ExpressionUUID->"201ce178-00c2-4ca4-a076-7729f62a3ebe"],
+Cell[885, 30, 489, 10, 30, "Input",ExpressionUUID->"0a8e5885-ed08-4620-b07e-50a160db50d0"],
+Cell[1377, 42, 324, 8, 30, "Input",ExpressionUUID->"1655ba53-8e85-4ea6-a6a0-eb207884a3d6"],
+Cell[1704, 52, 551, 11, 30, "Input",ExpressionUUID->"44d8fbae-1f3a-409c-bb5f-cc5fd5db50be"],
+Cell[2258, 65, 585, 16, 53, "Input",ExpressionUUID->"7edc4d55-aa14-4b25-a518-8b844cacda62"],
+Cell[2846, 83, 176, 2, 34, "Output",ExpressionUUID->"eaee8e7b-07b6-4683-9fc4-0dabf2d6c7f3"],
+Cell[3025, 87, 409, 11, 53, "Input",ExpressionUUID->"23419eaa-872d-48fd-902b-f18e15f65372"],
+Cell[3437, 100, 338, 9, 53, "Input",ExpressionUUID->"e1b47694-16cc-4ce5-b937-f1107d5affe4"],
+Cell[3778, 111, 167, 2, 34, "Output",ExpressionUUID->"fd48d403-d784-4fea-89a3-6d786f14d438"],
+Cell[CellGroupData[{
+Cell[3970, 117, 402, 9, 30, "Input",ExpressionUUID->"a18c567d-8632-4810-b36a-21973debf6c3"],
+Cell[4375, 128, 519, 15, 72, "Output",ExpressionUUID->"c5b5f256-97ee-484d-ae12-5bfe5f3af1f9"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4931, 148, 315, 8, 50, "Input",ExpressionUUID->"bc2ec1b1-5692-4463-a464-fb68954c50df"],
+Cell[5249, 158, 298, 7, 51, "Output",ExpressionUUID->"cb450eef-848c-4464-8c0b-840c468f5aa1"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5584, 170, 337, 7, 48, "Input",ExpressionUUID->"bd8fa069-ea96-4d7d-8e03-43ca6f1fdef6"],
+Cell[5924, 179, 177, 3, 51, "Output",ExpressionUUID->"b6cb987c-5de2-4901-bd66-4a9dc7475c26"]
+}, Open  ]]
+}
+]
+*)
+
