@@ -1,0 +1,195 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      5837,        187]
+NotebookOptionsPosition[      5123,        169]
+NotebookOutlinePosition[      5519,        185]
+CellTagsIndexPosition[      5476,        182]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell["", "Text",
+ CellChangeTimes->{{3.814608428972519*^9, 
+  3.8146084301293793`*^9}},ExpressionUUID->"63b13be2-e224-4c28-8c5e-\
+f9f89fd0d972"],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.814608443817934*^9, 
+  3.814608446534913*^9}},ExpressionUUID->"5f0ebc0b-7f2b-4eb0-9921-\
+9b3134f16324"],
+
+Cell[TextData[Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     OverscriptBox["p", "^"], "(", "\[Mu]", ")"}], "\[Proportional]", 
+    RowBox[{
+     UnderoverscriptBox["\[Product]", 
+      RowBox[{"i", "=", "0"}], "n"], 
+     RowBox[{
+      SubscriptBox["g", "i"], "(", "\[Mu]", ")"}]}]}], "=", 
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      SubscriptBox["f", "0"], "(", "\[Mu]", ")"}], 
+     RowBox[{
+      UnderoverscriptBox["\[Product]", 
+       RowBox[{"i", "=", "1"}], "n"], 
+      RowBox[{
+       SubscriptBox["g", "i"], "(", "\[Mu]", ")"}]}]}], "=", 
+    RowBox[{
+     RowBox[{"N", "(", 
+      RowBox[{
+       RowBox[{"\[Mu]", "|", "0"}], ",", "b"}], ")"}], 
+     RowBox[{
+      UnderoverscriptBox["\[Product]", 
+       RowBox[{"i", "=", "1"}], "n"], 
+      RowBox[{"N", "(", 
+       RowBox[{
+        RowBox[{"\[Mu]", "|", 
+         SubscriptBox["m", "i"]}], ",", 
+        SuperscriptBox[
+         SubscriptBox["s", "i"], "2"]}], ")"}]}]}]}]}], TraditionalForm]],
+ FormatType->
+  "TraditionalForm",ExpressionUUID->"de6aed19-6eb0-42a4-be89-d3c1c63d9ea0"]], \
+"Text",
+ CellChangeTimes->{{3.814608453330996*^9, 3.814608491504909*^9}, {
+  3.8146085417785892`*^9, 
+  3.814608685930121*^9}},ExpressionUUID->"5a5a310c-53a8-452d-9192-\
+f1de7541d81f"],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{
+  3.8146085390030327`*^9},ExpressionUUID->"db80601b-8ecf-4c4f-a857-\
+19a9db84ce07"],
+
+Cell[TextData[Cell[BoxData[
+ FormBox[
+  RowBox[{" ", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"N", "(", 
+      RowBox[{
+       RowBox[{"\[Mu]", "|", "0"}], ",", "b"}], ")"}], 
+     RowBox[{
+      UnderoverscriptBox["\[Product]", 
+       RowBox[{"i", "=", "1"}], "n"], 
+      RowBox[{"N", "(", 
+       RowBox[{
+        RowBox[{"\[Mu]", "|", 
+         SubscriptBox["m", "i"]}], ",", 
+        SuperscriptBox[
+         SubscriptBox["s", "i"], "2"]}], ")"}]}]}], "\[IndentingNewLine]", 
+    RowBox[{"=", "  ", 
+     RowBox[{
+      RowBox[{"N", "(", 
+       RowBox[{
+        RowBox[{"\[Mu]", "|", "0"}], ",", "b"}], ")"}], 
+      RowBox[{"N", "(", 
+       RowBox[{
+        RowBox[{"\[Mu]", "|", 
+         SubscriptBox["m", "1"]}], ",", 
+        SuperscriptBox[
+         SubscriptBox["s", "1"], "2"]}], ")"}], 
+      RowBox[{"N", "(", 
+       RowBox[{
+        RowBox[{"\[Mu]", "|", 
+         SubscriptBox["m", "2"]}], ",", 
+        SuperscriptBox[
+         SubscriptBox["s", "2"], "2"]}], ")"}], 
+      RowBox[{"N", "(", 
+       RowBox[{
+        RowBox[{"\[Mu]", "|", 
+         SubscriptBox["m", "3"]}], ",", 
+        SuperscriptBox[
+         SubscriptBox["s", "3"], "2"]}], ")"}], 
+      RowBox[{"N", "(", 
+       RowBox[{
+        RowBox[{"\[Mu]", "|", 
+         SubscriptBox["m", "5"]}], ",", 
+        SuperscriptBox[
+         SubscriptBox["s", "5"], "2"]}], ")"}], 
+      RowBox[{"N", "(", 
+       RowBox[{
+        RowBox[{"\[Mu]", "|", 
+         SubscriptBox["m", "6"]}], ",", 
+        SuperscriptBox[
+         SubscriptBox["s", "6"], "2"]}], ")"}]}]}], "\[IndentingNewLine]", 
+    RowBox[{"=", " ", 
+     RowBox[{
+      RowBox[{"N", "(", 
+       RowBox[{
+        RowBox[{"\[Mu]", "|", "0"}], ",", "b"}], ")"}], 
+      RowBox[{"N", "(", 
+       RowBox[{
+        RowBox[{"\[Mu]", "|", 
+         SubscriptBox["m", "1"]}], ",", 
+        SuperscriptBox[
+         SubscriptBox["s", "1"], "2"]}], ")"}], 
+      RowBox[{"N", "(", 
+       RowBox[{
+        RowBox[{"\[Mu]", "|", 
+         SubscriptBox["m", "2"]}], ",", 
+        SuperscriptBox[
+         SubscriptBox["s", "2"], "2"]}], ")"}], 
+      RowBox[{"N", "(", 
+       RowBox[{
+        RowBox[{"\[Mu]", "|", 
+         SubscriptBox["m", "3"]}], ",", 
+        SuperscriptBox[
+         SubscriptBox["s", "3"], "2"]}], ")"}], 
+      RowBox[{"N", "(", 
+       RowBox[{
+        RowBox[{"\[Mu]", "|", 
+         SubscriptBox["m", "5"]}], ",", 
+        SuperscriptBox[
+         SubscriptBox["s", "5"], "2"]}], ")"}], 
+      RowBox[{"N", "(", 
+       RowBox[{
+        RowBox[{"\[Mu]", "|", 
+         SubscriptBox["m", "6"]}], ",", 
+        SuperscriptBox[
+         SubscriptBox["s", "6"], "2"]}], ")"}]}]}]}]}], 
+  TraditionalForm]],ExpressionUUID->"fe5acf8d-4a1d-4fbb-a83e-8bace444f9c9"]], \
+"Text",
+ CellChangeTimes->{{3.814608999798768*^9, 
+  3.8146091040197887`*^9}},ExpressionUUID->"1235fb38-c7b9-4b88-9bcd-\
+349d01cd26b2"]
+},
+WindowSize->{Full, Full},
+WindowMargins->{{28, Automatic}, {36, Automatic}},
+FrontEndVersion->"12.1 for Mac OS X x86 (64-bit) (March 18, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"ad7657f6-f317-4914-9f4a-9d3551f2ec95"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 144, 3, 35, "Text",ExpressionUUID->"63b13be2-e224-4c28-8c5e-f9f89fd0d972"],
+Cell[705, 25, 152, 3, 30, "Input",ExpressionUUID->"5f0ebc0b-7f2b-4eb0-9921-9b3134f16324"],
+Cell[860, 30, 1262, 39, 37, "Text",ExpressionUUID->"5a5a310c-53a8-452d-9192-f1de7541d81f"],
+Cell[2125, 71, 130, 3, 30, "Input",ExpressionUUID->"db80601b-8ecf-4c4f-a857-19a9db84ce07"],
+Cell[2258, 76, 2861, 91, 137, "Text",ExpressionUUID->"1235fb38-c7b9-4b88-9bcd-349d01cd26b2"]
+}
+]
+*)
+
